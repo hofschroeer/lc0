@@ -21,7 +21,9 @@ pipeline {
                     reference: '',
                     trackingSubmodules: true]],
                     submoduleCfg: [],
-                    userRemoteConfigs: [[url: 'git@github.com:hofschroeer/lc0.git']]
+                    userRemoteConfigs: [
+                        [credentialsId: 'a79f63e1-d53b-4f8b-92c1-c146dc5ba242', url: 'git@github.com:hofschroeer/lc0.git']
+                    ]
                 ])
             }
         }
