@@ -4,8 +4,10 @@ RUN apt-get update \
         clang-6.0 \
         libprotobuf-dev \
         git \
-        meson \
         ninja-build \
         pkg-config \
         protobuf-compiler \
+        python3-pip \
     && apt-get clean all
+RUN pip3 install -U pip \
+    && pip install -U meson
