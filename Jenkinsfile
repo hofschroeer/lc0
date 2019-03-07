@@ -2,8 +2,9 @@
 
 pipeline {
     agent {
-        dockerfile true
-        label 'has-docker'
+        dockerfile {
+            label 'has-docker'
+        }
     }
     stages {
         stage('Build') {
