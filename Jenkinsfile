@@ -4,6 +4,7 @@ pipeline {
     agent {
         dockerfile {
             label 'has-docker'
+            reuseNode true
         }
     }
     stages {
